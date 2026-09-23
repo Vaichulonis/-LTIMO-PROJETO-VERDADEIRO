@@ -1,5 +1,5 @@
 ## Site de mudanças climáticas:
-# 🌎 Site sobre Mudanças Climáticas
+# 🌎 Site Climático
 
 Um site educativo desenvolvido com **Python, Flask e Jinja2** para explicar, de forma simples e acessível, o que são as **mudanças climáticas**, o que está sendo feito atualmente para combatê-las e quais hábitos podemos mudar para contribuir com um futuro mais sustentável.
 
