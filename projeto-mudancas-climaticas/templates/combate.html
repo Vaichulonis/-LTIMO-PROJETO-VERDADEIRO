@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+{% block title %}Como combater? | Mudanças Climáticas{% endblock %}
+
+{% block content %}
+<section class="pagina-topo">
+    <div class="container pagina-topo-content">
+        <span class="tag tag-verde">🌱 CAMINHOS PARA A AÇÃO</span>
+        <h1>O que está sendo feito para combater?</h1>
+        <p>Conheça algumas das estratégias usadas para reduzir emissões e enfrentar os impactos climáticos.</p>
+    </div>
+</section>
+
+<section class="container pagina">
+    <div class="duas-colunas destaque-solucao">
+        <div>
+            <span class="numero">01</span>
+            <h2>Uma resposta que depende de todos</h2>
+            <p>
+                O enfrentamento das mudanças climáticas envolve governos,
+                empresas, pesquisadores, organizações e a sociedade. As ações
+                incluem tanto a redução das emissões quanto a adaptação aos
+                impactos climáticos.
+            </p>
+        </div>
+
+        <img class="imagem-arredondada" src="{{ url_for('static', filename='images/energia_eolica.png') }}" alt="Turbinas eólicas em uma paisagem">
+    </div>
+
+    <div class="solucoes-grid">
+        <article class="solucao">
+            <span>☀️</span>
+            <h3>Energias renováveis</h3>
+            <p>Expansão de fontes como solar e eólica para diversificar a matriz energética.</p>
+        </article>
+
+        <article class="solucao">
+            <span>🌳</span>
+            <h3>Proteção das florestas</h3>
+            <p>Conservação e recuperação de florestas e outros ecossistemas.</p>
+        </article>
+
+        <article class="solucao">
+            <span>🏙️</span>
+            <h3>Cidades preparadas</h3>
+            <p>Planejamento e infraestrutura para reduzir riscos e aumentar a adaptação.</p>
+        </article>
+
+        <article class="solucao">
+            <span>🌎</span>
+            <h3>Cooperação internacional</h3>
+            <p>Países estabelecem acordos, metas e mecanismos de cooperação climática.</p>
+        </article>
+    </div>
+
+    <div class="imagem-larga">
+        <img src="{{ url_for('static', filename='images/floresta.png') }}" alt="Grande área de floresta e rio preservados">
+    </div>
+
+    <div class="faixa-informativa">
+        <span>🤝</span>
+        <div>
+            <h2>A mudança é coletiva</h2>
+            <p>
+                Grandes políticas e investimentos são fundamentais, enquanto
+                atitudes individuais e comunitárias podem complementar essas ações.
+            </p>
+        </div>
+    </div>
+</section>
+{% endblock %}

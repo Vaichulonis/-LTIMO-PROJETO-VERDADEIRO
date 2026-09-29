@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+
+{% block title %}Início | Mudanças Climáticas{% endblock %}
+
+{% block content %}
+
+<section class="hero">
+    <div class="hero-image">
+        <img src="{{ url_for('static', filename='images/planeta.png') }}" alt="Planeta Terra entre um ambiente preservado e um cenário afetado pela poluição">
+    </div>
+
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+        <span class="tag">🌍 Nosso planeta precisa de atenção</span>
+        <h1>Mudanças climáticas:<br><strong>entender para transformar</strong></h1>
+        <p>
+            Descubra o que são as mudanças climáticas, o que está sendo
+            feito para enfrentá-las e quais atitudes sustentáveis podemos
+            adotar no cotidiano.
+        </p>
+
+        <div class="hero-actions">
+            <a class="botao botao-principal" href="{{ url_for('mudancas_climaticas') }}">Entenda o problema</a>
+            <a class="botao botao-secundario" href="{{ url_for('habitos') }}">Veja como ajudar</a>
+        </div>
+    </div>
+</section>
+
+<section class="container secao">
+    <div class="section-heading">
+        <span class="tag tag-verde">CONHEÇA O TEMA</span>
+        <h2>Por que falar sobre mudanças climáticas?</h2>
+        <p>
+            As alterações no clima afetam ecossistemas, cidades e sociedades.
+            Conhecer o problema ajuda a compreender a importância das ações de
+            redução de emissões, preservação ambiental e adaptação.
+        </p>
+    </div>
+  
+    <div class="cards">
+        <article class="card card-image">
+            <img src="{{ url_for('static', filename='images/floresta.png') }}" alt="Floresta e rio preservados">
+            <div class="card-body">
+                <span class="card-icon">🌳</span>
+                <h3>Preservação</h3>
+                <p>Florestas e outros ecossistemas são importantes para o equilíbrio ambiental e climático.</p>
+            </div>
+        </article>
+
+        <article class="card card-image">
+            <img src="{{ url_for('static', filename='images/energia_eolica.png') }}" alt="Parque de energia eólica">
+            <div class="card-body">
+                <span class="card-icon">☀️</span>
+                <h3>Energia limpa</h3>
+                <p>Fontes renováveis fazem parte da transição para sistemas de energia com menores emissões.</p>
+            </div>
+        </article>
+
+        <article class="card card-image">
+            <img src="{{ url_for('static', filename='images/acoes_climaticas.png') }}" alt="Ícones de ações climáticas">
+            <div class="card-body">
+                <span class="card-icon">🤝</span>
+                <h3>Ação coletiva</h3>
+                <p>Governos, empresas, comunidades e indivíduos podem participar da construção de soluções.</p>
+            </div>
+        </article>
+    </div>
+</section>
+
+<section class="faixa-verde">
+    <div class="container faixa-content">
+        <div>
+            <span class="tag tag-claro">🌱 ATITUDE</span>
+            <h2>Conhecimento gera ação.</h2>
+            <p>Informar-se é um dos primeiros passos para tomar decisões mais conscientes.</p>
+        </div>
+        <a class="botao botao-branco" href="{{ url_for('combate') }}">Conheça as soluções</a>
+    </div>
+</section>
+{% endblock %}

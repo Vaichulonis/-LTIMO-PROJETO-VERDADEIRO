@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+
+{% block title %}Hábitos Sustentáveis | Mudanças Climáticas{% endblock %}
+
+{% block content %}
+<section class="pagina-topo">
+    <div class="container pagina-topo-content">
+        <span class="tag tag-verde">♻️ FAÇA A SUA PARTE</span>
+        <h1>Hábitos que podemos mudar</h1>
+        <p>Pequenas escolhas podem fazer parte de uma rotina mais consciente e sustentável.</p>
+    </div>
+</section>
+
+<section class="container pagina">
+    <div class="duas-colunas destaque-solucao">
+        <div>
+            <span class="numero">01</span>
+            <h2>Sustentabilidade no dia a dia</h2>
+            <p>
+                Nossas escolhas de transporte, consumo, alimentação e uso de
+                recursos podem contribuir para reduzir desperdícios e impactos
+                ambientais.
+            </p>
+        </div>
+
+        <img class="imagem-arredondada" src="{{ url_for('static', filename='images/muda.png') }}" alt="Muda de planta sendo segurada pelas mãos">
+    </div>
+
+    <div class="habitos-grid">
+        <article class="habito">
+            <span>💡</span>
+            <h3>Economize energia</h3>
+            <p>Evite desperdícios e desligue aparelhos quando não estiverem em uso.</p>
+        </article>
+
+        <article class="habito">
+            <span>🚲</span>
+            <h3>Prefira transportes sustentáveis</h3>
+            <p>Quando possível, caminhe, use bicicleta ou transporte público.</p>
+        </article>
+
+        <article class="habito">
+            <img src="{{ url_for('static', filename='images/alimentos.png') }}" alt="Alimentos frescos em uma sacola reutilizável">
+            <div>
+                <h3>Evite desperdício de alimentos</h3>
+                <p>Planeje compras e aproveite os alimentos da melhor maneira possível.</p>
+            </div>
+        </article>
+
+        <article class="habito">
+            <span>🛍️</span>
+            <h3>Consuma conscientemente</h3>
+            <p>Pense antes de comprar e dê preferência a produtos duráveis quando possível.</p>
+        </article>
+
+        <article class="habito">
+            <span>♻️</span>
+            <h3>Reutilize e recicle</h3>
+            <p>Reduza a geração de resíduos e separe corretamente os recicláveis.</p>
+        </article>
+
+        <article class="habito">
+            <img src="{{ url_for('static', filename='images/agua.png') }}" alt="Torneira com água pingando">
+            <div>
+                <h3>Economize água</h3>
+                <p>Evite desperdícios e utilize esse recurso de maneira responsável.</p>
+            </div>
+        </article>
+    </div>
+
+    <div class="imagem-larga imagem-final">
+        <img src="{{ url_for('static', filename='images/acoes_climaticas.png') }}" alt="Ícones representando diferentes ações climáticas">
+    </div>
+</section>
+{% endblock %}

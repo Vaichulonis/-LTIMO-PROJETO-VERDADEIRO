@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site educativo sobre mudanças climáticas, ações de combate e hábitos sustentáveis.">
+    <title>{% block title %}Mudanças Climáticas{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="container nav-container">
+            <a class="logo" href="{{ url_for('index') }}">
+                <span class="logo-icon">🌎</span>
+                <span>Mudanças Climáticas</span>
+            </a>
+
+            <nav class="menu" aria-label="Navegação principal">
+                <a href="{{ url_for('index') }}">Início</a>
+                <a href="{{ url_for('mudancas_climaticas') }}">O que são?</a>
+                <a href="{{ url_for('combate') }}">Como combater?</a>
+                <a href="{{ url_for('habitos') }}">Hábitos sustentáveis</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="rodape">
+        <div class="container footer-content">
+            <div>
+                <strong>🌱 Mudanças Climáticas</strong>
+                <p>Informação e conscientização por um futuro mais sustentável.</p>
+            </div>
+            <p class="footer-small">Projeto educativo desenvolvido com Flask e Jinja2.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+
+{% block title %}O que são? | Mudanças Climáticas{% endblock %}
+
+{% block content %}
+<section class="pagina-topo">
+    <div class="container pagina-topo-content">
+        <span class="tag tag-verde">🌡️ ENTENDA O PROBLEMA</span>
+        <h1>O que são as mudanças climáticas?</h1>
+        <p>Entenda as causas, o efeito estufa e alguns dos impactos observados no planeta.</p>
+    </div>
+</section>
+
+<section class="container pagina">
+    <div class="texto-destaque">
+        <div>
+            <span class="numero">01</span>
+            <h2>Uma mudança no clima do planeta</h2>
+        </div>
+        <p>
+            Mudanças climáticas são alterações de longo prazo nos padrões de
+            temperatura e clima. Embora o clima possa mudar naturalmente,
+            o aquecimento observado atualmente é impulsionado principalmente
+            pelas atividades humanas que aumentam a concentração de gases
+            de efeito estufa na atmosfera.
+        </p>
+    </div>
+
+    <div class="imagem-larga">
+        <img src="{{ url_for('static', filename='images/planeta.png') }}" alt="Representação visual de diferentes condições ambientais do planeta">
+    </div>
+
+    <div class="duas-colunas">
+        <div>
+            <span class="numero">02</span>
+            <h2>O efeito estufa</h2>
+            <p>
+                O efeito estufa é um fenômeno natural que ajuda a manter a
+                Terra aquecida. O aumento da concentração de determinados
+                gases intensifica esse efeito e contribui para o aquecimento global.
+            </p>
+        </div>
+
+        <div class="info-box">
+            <h3>Principais fatores relacionados</h3>
+            <ul class="check-list">
+                <li>🏭 Emissões de atividades industriais</li>
+                <li>⛽ Queima de combustíveis fósseis</li>
+                <li>🌳 Desmatamento e degradação de ecossistemas</li>
+                <li>🚗 Emissões do transporte</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="impactos">
+        <span class="tag tag-verde">03 · IMPACTOS</span>
+        <h2>Algumas consequências</h2>
+
+        <div class="impact-grid">
+            <div class="impact"><span>🌡️</span><strong>Temperaturas</strong><p>Alterações nas temperaturas médias e ocorrência de ondas de calor.</p></div>
+            <div class="impact"><span>🌧️</span><strong>Chuvas</strong><p>Mudanças nos padrões de precipitação e disponibilidade de água.</p></div>
+            <div class="impact"><span>🌊</span><strong>Nível do mar</strong><p>Contribuição para a elevação do nível dos oceanos.</p></div>
+            <div class="impact"><span>🐾</span><strong>Ecossistemas</strong><p>Pressões sobre habitats, espécies e biodiversidade.</p></div>
+        </div>
+    </div>
+</section>
+{% endblock %}
