@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block title %}Notícias | Mudanças Climáticas{% endblock %}
+
+{% block content %}
+<section class="pagina-topo">
+    <div class="container pagina-topo-content">
+        <span class="tag tag-verde">📰 O que está sendo feito?</span>
+        <h1>O que está sendo feito para combater?</h1>
+        <p>leia agora algumas das notícias mais recentes de alguns países que estão tentando reduzir emissões e enfrentar os impactos climáticos.</p>
+    
+    </div>
+</section>
+
+<section class="container pagina">
+    <div class="duas-colunas destaque-solucao">
+        
+        <div>
+            <span class="numero">edição n° 001</span>
+            <img class="imagem-arredondada" src="{{ url_for('static', filename='images/Bandeiras_mundo.jpg') }}" alt="Várias bandeiras de países">
+        </div>
+
+        <div>
+            <h2>Países debatem 1º tratado global contra poluição plástica em meio
+            a impasse sobre produção</h2>
+            <p>
+            Quase 180 países tentam fechar, em 10 dias, um acordo internacional 
+            para enfrentar uma crise global que custa US$ 1,5 trilhão por ano e 
+            ameaça a saúde, a biodiversidade e populações vulneráveis.
+            </p>
+        </div>
+    </div>
+
+    <div class="imagem-larga">
+        <img src="{{ url_for('static', filename='images/floresta.png') }}" alt="Grande área de floresta e rio preservados">
+    </div>
+
+    <div class="faixa-informativa">
+        <span>🤝</span>
+        <div>
+            <h2>A mudança é coletiva</h2>
+            <p>
+                Grandes políticas e investimentos são fundamentais, enquanto
+                atitudes individuais e comunitárias podem complementar essas ações.
+            </p>
+        </div>
+    </div>
+</section>
+{% endblock %}
