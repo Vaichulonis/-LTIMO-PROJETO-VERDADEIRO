@@ -22,6 +22,10 @@ def combate():
 def habitos():
     return render_template("habitos.html")
 
+@app.route("/noticias")
+def noticias():
+    return render_template("noticias.html")
+
 
 if __name__ == "__main__":
     app.run(debug=True)
